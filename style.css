@@ -245,6 +245,19 @@ footer p{
     gap: 8px;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 17px;
+}
+#mobile{
+    margin-top: 80px;
+}
+.contact img{
+    width: 7%;
+}
+
 @media (max-width: 1000px) {
     #sidebar{
         display: none;
@@ -281,6 +294,9 @@ footer p{
             gap: 0;
         }
     }
+    .Date-time{
+        display: none;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -301,6 +317,9 @@ footer p{
     .Uber-Clone .stack{
     width: 200%;
 }
+    .contact{
+        display: none;
+    }
 }
 
 @font-face {
