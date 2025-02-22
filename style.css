@@ -1,0 +1,306 @@
+*{
+    font-family: 'myFont', sans-serif;
+    /* border: 0.1px solid black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    color: #343A40;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h2{
+    font-family: 'pacifico',serif;
+}
+
+h4{
+    font-family: 'josef', serif;
+    font-size: larger
+}
+
+body{
+    background-color: #f8f9fa;
+    background: url("./assets/images/vecteezy_minimalist-style-hand-painted-liquid-background_6915132.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+  
+  
+
+
+#sidebar{
+    width: 3%;
+    border-radius: 12px;
+
+    height: 100vh;
+    position: fixed;
+    padding: 2px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+
+    img{
+        width: 80%;
+        transition: width .2s;
+    }
+    img:hover{
+        width: 100%;
+    }
+}
+
+#sidebar .side{
+    width: 10%;
+}
+
+
+.link{
+    padding-left: 4px;
+    padding-bottom: 8px;
+}
+
+.link.l1{
+    margin-top: 50px;
+}
+
+
+nav{
+    margin-top: 20px;
+    display: flex;
+    background-color: rgb(211, 225, 230);
+    padding: 3px 8px;
+    border-radius: 25px;
+    width: 40%;
+    justify-self: center;
+    justify-content: space-around;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    button{
+        background-color: rgb(211, 225, 230);
+        border: none;
+        padding: 8px 10px;
+    }
+
+    button:hover{
+        background-color: #ADB5BD;
+        border-radius: 19px;
+    }
+}
+
+.text{
+    width: 40%;
+
+}
+
+.first{
+    /* background-image: url("./assets/images/Bg-img.jpg"); */
+}
+
+#info{
+    padding: 25px;
+    .text{
+        width: 100%;
+        .brief{
+            padding-top: 100px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        button{
+                background-color: #495057;
+                border: none;
+                border-radius: 17px;
+                padding: 12px;
+                margin-top: 30px;
+            a{
+                text-decoration: none;
+                color: #E9ECEF;
+            }
+        }
+        img{
+        float: right;
+        position: relative;
+        bottom: 70px;
+        max-width: 100%;
+        height: auto;
+    }}
+}
+
+#about{
+    margin: 200px 20px 200px 100px;
+    text-align: start;
+    justify-self: start;
+    border: 10px;
+    width: 70%;
+    h2{
+        text-align: start;
+        padding: 0;
+    }
+}
+
+.skills{
+    padding-left: 100px;
+    margin: 0;
+
+    img{
+        width: 10%;
+    }
+}
+
+#prime-skills, #second-skill{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content:  center;
+    margin-bottom: 30px;
+
+    img{
+        transition: width .5s;
+    }
+
+    img:hover{
+        cursor: pointer;
+        width: 15%;
+    }
+}
+
+
+#Projects{
+    margin-left: 100px;
+    margin-top: 100px;
+    h5{
+        padding-top: 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #343A40;
+    }
+}
+
+.project-text{
+    width: 60%;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.stack{
+    display: flex;
+    gap: 20px;
+
+    img{
+        width: 5%;
+    }
+    
+}
+
+.project-list{
+    display: flex;
+    margin:30px 0;
+    justify-content: space-around;    
+}
+
+.project-list{
+    margin-bottom: 60px;
+}
+
+.project-list > img{
+    width: 15%;
+    height: 15%;
+    align-self: center;
+    transition: width, .3s;
+}
+
+.project-list > img:hover {
+    width: 20%;
+}
+
+.Uber-Clone img{
+    padding: 0;
+    margin: 0;
+}
+.Uber-Clone .stack{
+    width: 200%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #DEE2E6;
+    padding: 20px;
+    padding-left: 40px;
+    background-image: url("./assets/images/gold-glitter-abstract-white-background.jpg");
+    background-size: contain;
+    border-top: 4px solid rgb(255, 238, 223);
+}
+footer p{
+    font-family: 'Lex', sans-serif;
+    padding-top: 40px;
+}
+
+@media (max-width: 1000px) {
+    #sidebar{
+        display: none;
+    }
+    nav{ width: 70%;}
+    #info{ 
+
+        #pc{
+            display: none;
+        }
+    }
+
+    #about{
+        margin-left: 50px;
+    }
+    .skills{
+        padding-left: 30px;
+    }
+
+    #Projects{
+        margin-left: 30px;
+        .stack img{
+            width: 12%;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .brief{        
+        width: 70%;
+        padding: 20px 20px 0px 100px;
+        margin-bottom: 0;
+    }
+
+    #mobile{
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url('./assets/Fonts/Poppins-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'pacifico';
+    src: url('./assets/Fonts/Pacifico-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'josef';
+    src: url('./assets/Fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Lex';
+    src: url('./assets/Fonts/LexendDeca-VariableFont_wght.ttf') format('truetype');
+  }
