@@ -72,7 +72,7 @@ nav{
     margin-top: 20px;
     display: flex;
     background-color: rgb(211, 225, 230);
-    padding: 3px 8px;
+    padding: 5px 8px;
     border-radius: 25px;
     width: 40%;
     justify-self: center;
@@ -223,13 +223,7 @@ h2{
     width: 20%;
 }
 
-.Uber-Clone img{
-    padding: 0;
-    margin: 0;
-}
-.Uber-Clone .stack{
-    width: 200%;
-}
+
 
 footer{
     display: flex;
@@ -246,8 +240,16 @@ footer p{
     padding-top: 40px;
 }
 
+.location{
+    display: flex; 
+    gap: 8px;
+}
+
 @media (max-width: 1000px) {
     #sidebar{
+        display: none;
+    }
+    .hide{
         display: none;
     }
     nav{ width: 70%;}
@@ -271,6 +273,14 @@ footer p{
             width: 12%;
         }
     }
+    .location{
+        flex-direction: column;
+        padding-top: 4px;
+        p{
+            padding-top:8px ;
+            gap: 0;
+        }
+    }
 }
 
 @media (min-width: 1000px) {
@@ -283,6 +293,14 @@ footer p{
     #mobile{
         display: none;
     }
+
+    .Uber-Clone .project-text{
+        width: 30%;
+    }
+    
+    .Uber-Clone .stack{
+    width: 200%;
+}
 }
 
 @font-face {
